@@ -7,7 +7,7 @@ import { connect } from "cloudflare:sockets";
 // generate your own UUID: https://www.uuidgenerator.net/
 let userID = "664f5f11-1231-486d-b416-b7b3ecdae76a";
 
-const proxyIPs = ['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org'];
+const proxyIPs = ['23.90.144.167'];
 
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
@@ -173,7 +173,7 @@ export default {
                             await updateDataset(
                             env,
                             host, 
-                            "https://8.8.8.8/dns-query", 
+                            "https://94.140.14.14/dns-query",
                             "1.1.1.1", 
                             "100", 
                             "200", 
