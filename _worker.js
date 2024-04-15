@@ -15,7 +15,7 @@ const proxyIPs= ['23.90.144.167', '45.142.115.59'];// OR USE const proxyIPs = ['
 
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
-let dohURL = 'https://cloudflare-dns.com/dns-query';
+let dohURL = 'https://dns.adguard-dns.com/dns-query';
 
 let panelVersion = '2.3.2';
 
@@ -1006,7 +1006,7 @@ const getFragmentConfigs = async (env, hostName, client) => {
 
         let fragConfig = structuredClone(xrayConfigTemp);
         let outbound = structuredClone(xrayOutboundTemp);
-        let remark = `💎 Frag - ${addr}`;
+        let remark = `💎 Fragment - ${addr}`;
         delete outbound.mux;
         delete outbound.streamSettings.grpcSettings;
         delete outbound.streamSettings.realitySettings;
